@@ -1,7 +1,12 @@
+@font-face {
+    font-family: robot ;
+    src: url(../font/Roboto-Regular.ttf);
+}
+
 .container {
-    width: 390px;
-    /* height: 844px; */
+    width: 100%;
     margin-bottom: 10%;
+    font-family: robot;
 }
 
 button {
@@ -10,6 +15,8 @@ button {
     background: none;
     border: none;
     border-radius: 5px;
+    margin: 0;
+    padding: 0;
 }
 
 button:hover{
@@ -51,7 +58,6 @@ button:hover{
 
 .searchnfil{
     display: flex;
-    justify-content: space-between;
 }
 
 .offers{
@@ -74,6 +80,7 @@ button:hover{
 
 .category button {
     border-radius: 5px;
+    padding: 5px;
     background-color: lightgrey;
 }
 
@@ -96,7 +103,7 @@ button:hover{
 }
 
 .popular-category button {
-    margin: 10px;
+    margin: 5px;
     padding-left: 10px;
     padding-right: 10px;
     border: 1px solid;
@@ -107,8 +114,7 @@ button:hover{
 .title{
     display: flex;
     justify-content: space-between;
-    margin-top: 10px;
-    margin-bottom: 10px;
+
 }
 
 .product-wrapper {
@@ -150,4 +156,69 @@ button:hover{
     display: flex;
     text-align: center;
     justify-content: space-between;
+}
+
+/* SLIDESHOW IMAGE */
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+    margin-top: 5px;
+    max-width: 1000px;
+    position: relative;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  top: 23px;
+  height: 190px;
+  padding: 16px;
+  margin-top: -22px;
+  color: transparent;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot1, .dot2, .dot3 {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  background-color: lightgray;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: black;
+  width: 20px;
+  border-radius: 5px;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .5} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
 }
