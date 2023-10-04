@@ -1,13 +1,10 @@
 @font-face {
-    font-family: robot ;
-    src: url(/asset/font/Roboto-Regular.ttf);
+    font-family: inter;
+    src: url(sset/font/Roboto-Regular.ttf)
 }
 
 .container {
-    width: 100%;
-    margin-bottom: 10%;
-    font-family: robot;
-    margin: 10px;
+    font-family: inter;
 }
 
 button {
@@ -16,72 +13,87 @@ button {
     background: none;
     border: none;
     border-radius: 5px;
-    margin: 0;
-    padding: 0;
 }
 
 button:hover{
     opacity: 0.5;
 }
 
-.header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.title-product {
+    margin-top: 5%;
+    font-size: 180%;
+    text-align: center;
 }
 
-.header1 {
+.search-column {
+    margin-top: 3%;
+    margin-left: 3%;
+    font-family: inter;
+    font-size: 25px;
+    width: 80%;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid #7a7a7a;
+    background: #FFF;
     display: flex;
-    justify-content: space-between;
+    align-items: center; 
+    padding-left: 2%;
+    padding-top: 1%;
 }
-
 #search {
-    width: 330px;
-    padding-left: 20px;
+    font-size: 25px;
+    border-style: none;
+    width: 80%;
+    outline-style: none;
+}
+.input-field {
+    flex-grow: 1;
+    display: flex;
+    align-items: center; 
+    border-style: none;
 }
 
 .logo-search {
-    position: relative;
-    top: -19px;
-    left: 5px;
     opacity: 0.5;
 }
+.sort {
+    position: relative;
+    margin-right: -70px;
+}
 
-.header2 {
+.wrapper-search{
     display: flex;
     justify-content: space-between;
-}
-
-.header2 button {
-    padding: 6px;
-    border-radius: 50%;
-}
-
-.searchnfil{
-    display: flex;
+    align-items: center;
 }
 
 .offers{
     display: flex;
     justify-content: space-between;
 }
-
-.advertise{
-    overflow: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.love {
+    position: absolute;
+    margin-top: -160px;
+    margin-left: 140px;
 }
-
 .category{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
+.rating {
+    justify-content: space-between;
+    margin-left: 5px;
+}
+.rating span{
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 5px;
+    opacity: 0.5;
+}
 .category button {
     border-radius: 5px;
-    padding: 5px;
     background-color: lightgrey;
 }
 
@@ -97,14 +109,16 @@ button:hover{
     justify-content: space-between;
 }
 
-
 .popular-category {
+    font-size: 50px;
     overflow: auto;
     display: flex;
 }
 
 .popular-category button {
-    margin: 5px;
+    font-size: 20px;
+    margin: 10px;
+    margin-top: 5%;
     padding-left: 10px;
     padding-right: 10px;
     border: 1px solid;
@@ -113,9 +127,11 @@ button:hover{
 }
 
 .title{
+    font-family: inter;
     display: flex;
     justify-content: space-between;
-
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .product-wrapper {
@@ -146,10 +162,11 @@ button:hover{
     overflow: auto;
 }
  
+
 .footer{
     position: fixed;
     width: 100%;
-    height: fit-content;
+    height: 40px;
     background-color: white;
     bottom: 0;
     left: 0;
@@ -157,69 +174,11 @@ button:hover{
     display: flex;
     text-align: center;
     justify-content: space-between;
+    box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    padding-top: 10px;
 }
 
-/* SLIDESHOW IMAGE */
-
-* {box-sizing: border-box}
-body {font-family: Verdana, sans-serif; margin:0}
-.mySlides {display: none}
-img {vertical-align: middle;}
-
-/* Slideshow container */
-.slideshow-container {
-    margin-top: 5px;
-    max-width: 1000px;
-    position: relative;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  width: auto;
-  top: 23px;
-  height: 190px;
-  padding: 16px;
-  margin-top: -22px;
-  color: transparent;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot1, .dot2, .dot3 {
-  cursor: pointer;
-  height: 10px;
-  width: 10px;
-  background-color: lightgray;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: black;
-  width: 20px;
-  border-radius: 5px;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .5} 
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
+.product-wrapper span {
+    margin-left: 10px;
 }
