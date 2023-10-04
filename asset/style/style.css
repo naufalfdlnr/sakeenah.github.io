@@ -1,0 +1,153 @@
+.container {
+    width: 390px;
+    /* height: 844px; */
+    margin-bottom: 10%;
+}
+
+button {
+    transition: ease;
+    cursor: pointer;
+    background: none;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover{
+    opacity: 0.5;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+#search {
+    width: 330px;
+    padding-left: 20px;
+}
+
+.logo-search {
+    position: relative;
+    top: -19px;
+    left: 5px;
+    opacity: 0.5;
+}
+
+.header2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header2 button {
+    padding: 6px;
+    border-radius: 50%;
+}
+
+.searchnfil{
+    display: flex;
+    justify-content: space-between;
+}
+
+.offers{
+    display: flex;
+    justify-content: space-between;
+}
+
+.advertise{
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.category{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.category button {
+    border-radius: 5px;
+    background-color: lightgrey;
+}
+
+.category-prod {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.category1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.popular-category {
+    overflow: auto;
+    display: flex;
+}
+
+.popular-category button {
+    margin: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+    text-wrap: nowrap;
+}
+
+.title{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.product-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.product{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+.item {
+    margin-right: 20px;
+}
+
+.title2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.title3{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+}
+ 
+.footer{
+    position: fixed;
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+    bottom: 0;
+    left: 0;
+    border-radius: 5px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
