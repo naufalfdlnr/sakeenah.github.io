@@ -1,6 +1,6 @@
 @font-face {
     font-family: robot ;
-    src: url(../font/Roboto-Regular.ttf);
+    src: url(/asset/font/Roboto-Regular.ttf);
 }
 
 .container {
