@@ -17,6 +17,7 @@ img {vertical-align: middle;}
 }
 
 button {
+    text-wrap: nowrap;
     transition: ease;
     cursor: pointer;
     background: none;
