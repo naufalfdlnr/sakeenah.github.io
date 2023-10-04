@@ -9,6 +9,7 @@ body {margin:0}
 img {vertical-align: middle;}
 
 .container {
+    text-wrap: nowrap;
     width: 100%;
     position: absolute;
     font-family: robot;
