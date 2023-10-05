@@ -6,7 +6,6 @@
 * {box-sizing: border-box}
 body {margin:0}
 .mySlides {display: none}
-img {vertical-align: middle;}
 
 .container {
     text-wrap: nowrap;
@@ -42,7 +41,7 @@ button:hover{
     display: flex;
     text-align: center;
     justify-content: space-between;
-    box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.2);
+    border: solid rgb(126, 126, 126) 1px;
     z-index: 1000;
     padding-top: 10px;
 }

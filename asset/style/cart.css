@@ -1,0 +1,89 @@
+@font-face {
+    font-family: robot;
+    src: url(/asset/font/Roboto-Regular.ttf)
+}
+
+.container {
+    font-family: robot;
+}
+.header {
+    top: 0%;
+    left: 0%;
+    font-size: 25px;
+    height: 8%;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    padding-top: 18px;
+    z-index: 1000;
+}
+button {
+    transition: ease;
+    cursor: pointer;
+    background: none;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover{
+    opacity: 0.5;
+}
+
+.footer{
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    bottom: -1%;
+    left: 0;
+    border-radius: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    z-index: 1000;
+    padding-top: 10px;
+}
+.footer2{
+    position: fixed;
+    width: 100%;
+    height: 55px;
+    background-color: white;
+    bottom: 6%;
+    left: 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+.footer2 span {
+    padding-top: 8px;
+    padding-left: 20px;
+}
+.footer2 button {
+    
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 20px;
+    padding-top: -40px;
+    margin-top: 5px;
+    margin-right: 8px;
+    margin-bottom: 5px;
+    width: 150px;
+    border: solid black;
+    background-color: black;
+}
+
+.footer2 p {
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    margin-top: -1px;
+}
+
+.blank {
+    height: 30%;
+    background-color: rgb(255, 255, 255);
+}

@@ -10,7 +10,7 @@
     top: 0%;
     left: 0%;
     font-size: 25px;
-    height: 5%;
+    height: 8%;
     width: 100%;
     align-items: center;
     text-align: center;
@@ -33,13 +33,12 @@ button:hover{
 
 .title-product {
     font-family: robot;
-    margin-top: 5%;
     font-size: 160%;
     text-align: center;
 }
 
 .search-column {
-    margin-top: 14%;
+    margin-top: 18%;
     margin-left: 3%;
     font-family: robot;
     font-size: 25px;
@@ -71,7 +70,9 @@ button:hover{
 }
 .sort {
     position: relative;
-    margin-right: -50px;
+    margin-right: -45px;
+    margin-top: -10px;
+
 }
 
 .wrapper-search{
@@ -123,12 +124,12 @@ button:hover{
 }
 
 .popular-category button {
-    font-size: 20px;
+    font-size: 17px;
     margin: -2%;
     margin-top: 5%;
     margin-left: 5%;
     margin-bottom: 3%;
-    padding-top: 5px;
+    padding-top: 6px;
     padding-bottom: 5px;
     padding-left: 15px;
     padding-right: 15px;
@@ -156,53 +157,13 @@ button:hover{
     font-family: robot;
     display: flex;
     justify-content: space-between;
-    padding: 5px;
+    padding: 10px;
 }
 .item {
-    margin-right:1px;
+    margin-right:15px;
     font-family: robot;
 }
 
-.title2 {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.title3{
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    overflow: auto;
-}
- 
-
-.footer{
-    position: fixed;
-    width: 100%;
-    height: 60px;
-    background-color: white;
-    bottom: -1%;
-    left: 0;
-    border-radius: 10px;
-    display: flex;
-    text-align: center;
-    justify-content: space-between;
-    box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
-    padding-top: 10px;
-}
-
-#home {
-    padding-top: 5px;
-    padding-left: 10px;
-}
-#content {
-    padding-top: 5px;
-}
-#account {
-    padding-top: 5px;
-    padding-right: 10px;
-}
 
 .product-wrapper span {
     
