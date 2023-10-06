@@ -147,13 +147,13 @@
     align-items: center;
 }
 
-#love1 {
+.love1 {
     position: absolute;
     margin-top: -160px;
     margin-left: 140px;
 }
 
-#love2 {
+.love2 {
     position: absolute;
     margin-top: -160px;
     margin-left: 140px;
