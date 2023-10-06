@@ -18,7 +18,7 @@
 
 .logo-search {
     position: absolute;
-    top: 63px;
+    top: 1.55%;
     left: 15px;
     opacity: 0.8;
 }
@@ -145,6 +145,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#love1 {
+    position: absolute;
+    margin-top: -160px;
+    margin-left: 140px;
+}
+
+#love2 {
+    position: absolute;
+    margin-top: -160px;
+    margin-left: 140px;
 }
 
 /* Next & previous buttons */

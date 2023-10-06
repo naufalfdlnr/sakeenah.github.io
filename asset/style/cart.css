@@ -19,32 +19,7 @@
     padding-top: 18px;
     z-index: 1000;
 }
-button {
-    transition: ease;
-    cursor: pointer;
-    background: none;
-    border: none;
-    border-radius: 5px;
-}
 
-button:hover{
-    opacity: 0.5;
-}
-
-.footer{
-    position: fixed;
-    width: 100%;
-    height: 60px;
-    background-color: white;
-    bottom: -1%;
-    left: 0;
-    border-radius: 10px;
-    display: flex;
-    text-align: center;
-    justify-content: space-between;
-    z-index: 1000;
-    padding-top: 10px;
-}
 .footer2{
     position: fixed;
     width: 100%;
@@ -81,9 +56,4 @@ button:hover{
     color: white;
     font-size: 20px;
     margin-top: -1px;
-}
-
-.blank {
-    height: 30%;
-    background-color: rgb(255, 255, 255);
 }
