@@ -5,32 +5,41 @@
 }
 
 .header1 {
+    margin-top: 10px;
     display: flex;
     justify-content: space-between;
 }
 
+.header1 button {
+    text-align: center;
+}
+
 #search {
     width: 95%;
-    padding-left: 30px;
+    padding-left: 40px;
     height: 30px;
     border-radius: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .logo-search {
     position: absolute;
-    top: 1.55%;
-    left: 15px;
-    opacity: 0.8;
+    top: 2.1%;
+    left: 5%;
 }
 
 .header2 {
+    margin-top: 10px;
     display: flex;
     justify-content: space-between;
 }
 
 .header2 button {
-    padding: 6px;
-    border-radius: 50%;
+    text-align: center;
+    background-color: rgb(241, 241, 241);
+    border-radius: 300px;
+    padding: 13px;
 }
 
 .searchnfil{
@@ -84,12 +93,16 @@
     display: flex;
 }
 
+.popular-category::-webkit-scrollbar {
+    background: none;
+  }
+
 .popular-category button {
     margin: 10px;
     padding-left: 20px;
     padding-right: 20px;
     border: 1px solid;
-    border-radius: 10px;
+    border-radius: 5px;
     text-wrap: nowrap;
 }
 
@@ -97,14 +110,12 @@
     display: flex;
     justify-content: space-between;
     padding-bottom: 5px;
-
 }
 
 .product-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 10px;
 }
 
 .product{
@@ -112,6 +123,23 @@
     justify-content: space-between;
     padding: 5px;
 }
+.love {
+    position: absolute;
+    margin-top: -160px;
+    margin-left: 140px;
+}
+
+.name-prod{
+    padding-top: 5px;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
 .item {
     margin-right: 20px;
 }
@@ -137,6 +165,11 @@
     margin-top: 5px;
     max-width: 1000px;
     position: relative;
+    transition: 0.5s;
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+    transition: left 2s;
 }
 
 .mySlides2{
@@ -147,17 +180,6 @@
     align-items: center;
 }
 
-.love1 {
-    position: absolute;
-    margin-top: -160px;
-    margin-left: 140px;
-}
-
-.love2 {
-    position: absolute;
-    margin-top: -160px;
-    margin-left: 140px;
-}
 
 /* Next & previous buttons */
 .prev, .next {
@@ -167,7 +189,9 @@
   top: 23px;
   height: 190px;
   padding: 16px;
+  width: 50%;
   margin-top: -22px;
+  transition: 2s;
   color: transparent;
   user-select: none;
 }
@@ -194,18 +218,93 @@
   border-radius: 5px;
 }
 
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .5} 
-  to {opacity: 1}
-}
-
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
+}
+
+/* SIDE NAV */
+
+.sidenav {
+    height: 100%;
+    max-width: 1000px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, rgb(255, 123, 0), rgb(255, 174, 0));
+    overflow-x: hidden;
+    transition: 0.5s;
+    font-size: 20px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 10px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.profile .closebtn {
+    position: absolute;
+    color: black;
+    top: 1%;
+    right: 5%;
+    font-size: 15px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    height: 15%;
+    align-items: center;
+}
+
+.main-nav {
+    background-color: white;
+    height: 85%;
+}
+
+.slider {
+  width: 370px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.slides::-webkit-scrollbar {
+  background: none;
+}
+
+.slides > div {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 370px;
+  height: 190px;
+  border-radius: 10px;
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
