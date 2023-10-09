@@ -95,7 +95,7 @@
 
 .popular-category::-webkit-scrollbar {
     background: none;
-  }
+}
 
 .popular-category button {
     margin: 10px;
@@ -154,7 +154,10 @@
     flex-direction: row;
     overflow: auto;
 }
- 
+
+.title3::-webkit-scrollbar {
+    background: none;
+}
 
 /* SLIDESHOW IMAGE */
 
