@@ -6,11 +6,26 @@ img {
     border-radius: 10px;
 }
 
+
+.container-order {
+    text-wrap: nowrap;
+    width: 100%;
+    position: absolute;
+    font-family: robot;
+    padding: 2% 0 0 0;
+}
+
 .header {
     margin-top: 10px;
     text-align: center;
     font-size: 25px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    position: sticky;
+    background-color: white;
 }
 
 .complete {
@@ -34,9 +49,9 @@ img {
 
 #highlighter1 {
     height: 2px;
-    width: 48%;
-    left: 2%;
-    background: #2f9599;
+    width: 50%;
+    left: 0;
+    background: #0f52ba;
     position: absolute;
     top: 37%;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.19);
@@ -44,9 +59,9 @@ img {
 
 #highlighter2 {
     height: 2px;
-    width: 48%;
-    right: 2%;
-    background: #2f9599;
+    width: 50%;
+    right: 0;
+    background: #0f52ba;
     position: absolute;
     top: 37%;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.19);
@@ -58,9 +73,11 @@ img {
     align-items: center;
     margin: 20px;
     padding: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
     border: 1px solid lightgrey;
     border-radius: 20px;
-    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0;
 }
 
 .desc {

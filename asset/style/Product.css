@@ -10,7 +10,7 @@
     top: 0%;
     left: 0%;
     font-size: 25px;
-    height: 8%;
+    height: 62px;
     width: 100%;
     align-items: center;
     text-align: center;
@@ -38,7 +38,7 @@ button:hover{
 }
 
 .search-column {
-    margin-top: 18%;
+    margin-top: 65px;
     margin-left: 3%;
     font-family: robot;
     font-size: 25px;
@@ -53,7 +53,7 @@ button:hover{
     padding-top: 1%;
 }
 #search {
-    font-size: 20px;
+    font-size: 18px;
     border-style: none;
     width: 80%;
     outline-style: none;
@@ -70,8 +70,7 @@ button:hover{
 }
 .sort {
     position: relative;
-    margin-right: -45px;
-    margin-top: -10px;
+    margin-right: -40px;
 
 }
 
@@ -150,10 +149,10 @@ button:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 10px;
 }
 
 .product{
+    font-size: 14px;
     font-family: robot;
     display: flex;
     justify-content: space-between;

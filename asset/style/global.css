@@ -42,7 +42,7 @@ button:hover{
     text-align: center;
     justify-content: space-between;
     border: solid rgb(126, 126, 126) 1px;
-    z-index: 1000;
+    z-index: 1;
     padding-top: 10px;
 }
 

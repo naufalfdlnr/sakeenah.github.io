@@ -2,6 +2,19 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    top: 0;
+    position: sticky;
+    background-color: white;
+    z-index: 1000;
+    padding-bottom: 10px;
+}
+
+input {
+    border: 1px solid black;
+}
+
+.main {
+    margin-top: 10px;
 }
 
 .header1 {
@@ -25,7 +38,7 @@
 
 .logo-search {
     position: absolute;
-    top: 2.1%;
+    top: 2.15%;
     left: 5%;
 }
 
@@ -70,9 +83,9 @@
 }
 
 .category button {
-    border-radius: 5px;
-    padding: 5px;
-    background-color: lightgrey;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(241, 241, 241);
 }
 
 .category-prod {
@@ -127,6 +140,7 @@
     position: absolute;
     margin-top: -160px;
     margin-left: 140px;
+    transition: 0.5s;
 }
 
 .name-prod{
@@ -158,6 +172,7 @@
 .title3::-webkit-scrollbar {
     background: none;
 }
+ 
 
 /* SLIDESHOW IMAGE */
 
@@ -232,7 +247,7 @@
     height: 100%;
     max-width: 1000px;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     top: 0;
     left: 0;
     background-image: linear-gradient(to right, rgb(255, 123, 0), rgb(255, 174, 0));
@@ -310,4 +325,31 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.logout {
+    max-width: 1000px;
+    width: 100%;
+    height: 10%;
+    bottom: 0;
+    background-color: lightgray;
+    align-items: center;
+    text-align: center;
+}
+
+.logout-button {
+    align-items: center;
+    margin: 12%;
+}
+
+.men button{
+    padding: 0 0 0 10px;
+    font-size: 20px;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.men-container {
+  display: none;
+  background-color: white;
+  padding-left: 8px;
 }
