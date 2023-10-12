@@ -5,44 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart</title>
 </head>
-<link rel="stylesheet" href="asset/style/cart.css">
+<link rel="stylesheet" href="asset/style/checkout.css">
 <link rel="stylesheet" href="asset/style/global.css">
 
 <body>
     <div class="container">
         <div class="header">
-            <span>My Cart</span>
+            <a href="/cart.html"><button><img src="/asset/image/arrow-282-64.png" width="15px"></button></a>
+            <span>Checkout</span>
         </div>
         <div class="blank">
         </div>
         <div class="main">
-            <div class="wrapper-item">
-                <div class="photo">
-                    <img src="/asset/image/20231003_002624.jpg" alt="" width="100px" style="border-radius: 10px;">
+            <div class="title-desc">
+                <span>Shipping Address</span>
+            </div>
+            <div class="wrapper-address">
+                <div class="photo-address">
+                    <img src="/asset/image/maps.png" alt="" width="30px">
                 </div>
-                <div class="desc">
-                    <div class="name">
-                        <span>Werolla Cardigans</span>
+                <div class="desc-address">
+                    <div class="address">
+                        <span><strong>Home</strong></span>
                     </div>
-                    <div class="color">
-                        <span style="opacity: 0.5;">Color | Size = M</span>
-                    </div>
-                    <div class="price">
-                        <span><strong>Rp.100,000</strong></span> 
-                    </div>
-                </div>
-                <div class="function">
-                    <div class="delete">
-                        <button class="remove">
-                            <img src="/asset/image/delete.png" alt="" width="13px">
-                        </button>
-                    </div>            
-                    <div class="quantity">
-                        <button class="subtract">-</button>
-                        <span class="count">0</span>
-                        <button class="add">+</button>
+                    <div class="detail">
+                        <span>61480 Sunbrook Park, PC 5679</span> 
                     </div>
                 </div>
+                <div class="edit">
+                    <button><img src="/asset/image/edit-4-64.png" width="15px"></button>
+                </div>
+            </div>
+            <div class="title-desc">
+                <span>Order List</span>
             </div>
             <div class="wrapper-item">
                 <div class="photo">
@@ -160,24 +155,9 @@
         <div class="blank2">
         </div>
         <div class="footer2">
-            <div class="desc-footer">
-                <div class="total-price">
-                    <span style="opacity: 0.5;">Total price</span>
-                </div>
-                <div class="total">
-                    <span><strong>Rp.0</strong></span>
-                </div>
-            </div>
-            <a href="/checkout.html"><button class="checkout">
-                <span>Checkout</span></a>
+            <button class="checkout">
+                <span>Continue to Payment</span>
             </button>
-        </div>
-        <div class="footer">
-            <a href="home.html"><button style="opacity: 0.5; display: flex; flex-direction: column; align-items: center;"><img src="asset/image/home_1946488.png" alt="" width="30px" style="padding-left: 10px;"><span id="home">Home</span></button></a>
-            <a href="product.html"><button style="opacity: 0.5; display: flex; flex-direction: column; align-items: center;"><img src="asset/image/box_4933961.png" alt="" width="20px;"><span id="content">Product</span></button></a>
-            <a href="cart.html"><button style="opacity: 0.5; display: flex; flex-direction: column; align-items: center;"><img src="asset/image/shopping-bag_4715424.png" alt="" width="20px"><span id="content">Cart</span></button></a>
-            <a href="order.html"><button style="opacity: 0.5; display: flex; flex-direction: column; align-items: center;"><img src="asset/image/shopping-cart_4511716.png" alt="" width="20px"><span id="content">Order</span></button></a>
-            <a href="account.html"><button style="opacity: 0.5; display: flex; flex-direction: column; align-items: center;"><img src="asset/image/user_1144760.png" alt="" width="30px" style="padding-right: 10px;"><span id="account">Account</span></button></a>
         </div>
     </div>
 <script src="/asset/style/cart.js"></script>
