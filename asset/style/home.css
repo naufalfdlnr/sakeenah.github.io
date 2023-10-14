@@ -92,7 +92,7 @@ input {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px;
+    margin: 15px;
 }
 
 .category1 {
@@ -176,6 +176,38 @@ input {
 
 /* SLIDESHOW IMAGE */
 
+.slider {
+  width: 370px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.slides::-webkit-scrollbar {
+  background: none;
+}
+
+.slides > div {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 370px;
+  height: 190px;
+  border-radius: 10px;
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
 /* Slideshow container */
@@ -198,27 +230,6 @@ input {
     align-items: center;
 }
 
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  width: auto;
-  top: 23px;
-  height: 190px;
-  padding: 16px;
-  width: 50%;
-  margin-top: -22px;
-  transition: 2s;
-  color: transparent;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-}
-
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
@@ -238,13 +249,13 @@ input {
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
+  .text {font-size: 11px}
 }
 
 /* SIDE NAV */
 
 .sidenav {
-    height: 90%;
+    height: 100%;
     max-width: 1000px;
     position: fixed;
     z-index: 2;
@@ -254,7 +265,12 @@ input {
     overflow-x: hidden;
     transition: 0.5s;
     font-size: 20px;
+    padding-bottom: 20%;
 }
+
+.sidenav::-webkit-scrollbar {
+    background: none;
+  }
 
 .sidenav a {
     padding: 8px 8px 8px 10px;
@@ -296,43 +312,10 @@ input {
     background: none;
 }
 
-.slider {
-  width: 370px;
-  text-align: center;
-  overflow: hidden;
-}
-
-.slides {
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
-}
-
-.slides::-webkit-scrollbar {
-  background: none;
-}
-
-.slides > div {
-  scroll-snap-align: start;
-  flex-shrink: 0;
-  width: 370px;
-  height: 190px;
-  border-radius: 10px;
-  transform-origin: center center;
-  transform: scale(1);
-  transition: transform 0.5s;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 .logout {
     position: fixed;
     max-width: 1000px;
-    width: 100%;
     height: 10%;
     bottom: 0;
     z-index: 2;
@@ -351,20 +334,25 @@ input {
     top: 25px;
 }
 
-.men {
-    padding: 8px 8px 8px 10px;
+.man {
+    padding: 8px 8px 25px 10px;
     color: #818181;
 }
 
-.men button{
+.man button{
     font-size: 20px;
     display: flex;
     text-align: center;
     color: #818181;
 }
 
-.men-container {
+.man-container {
   display: none;
   background-color: white;
   padding-left: 10px;
+}
+
+.man-container img {
+    border-radius: 20px;
+    margin-right: 25px;
 }

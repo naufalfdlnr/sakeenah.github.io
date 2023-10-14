@@ -210,23 +210,23 @@ function closeNav() {
   document.getElementById("logout").style.width = "0";
 }
 
-var men = document.getElementsByClassName("men-btn");
+var man = document.getElementsByClassName("man-btn");
 var i;
 
-for (i = 0; i < men.length; i++) {
-  men[i].addEventListener("click", function() {
-    var menContent = this.nextElementSibling;
-    if (menContent.style.display === "block") {
-      menContent.style.display = "none";
+for (i = 0; i < man.length; i++) {
+  man[i].addEventListener("click", function() {
+    var manContent = this.nextElementSibling;
+    if (manContent.style.display === "block") {
+      manContent.style.display = "none";
     } else {
-      menContent.style.display = "block";
+      manContent.style.display = "block";
     }
   });
 }
 
 var women = document.getElementsByClassName("women-btn");
 
-for (i = 0; i < men.length; i++) {
+for (i = 0; i < women.length; i++) {
   women[i].addEventListener("click", function() {
     var womenContent = this.nextElementSibling;
     if (womenContent.style.display === "block") {

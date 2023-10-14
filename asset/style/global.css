@@ -15,6 +15,10 @@ body {margin:0}
     padding: 2% 2% 0 2%;
 }
 
+a {
+    text-decoration: none;
+}
+
 button {
     text-wrap: nowrap;
     transition: ease;
@@ -44,6 +48,10 @@ button:hover{
     border: solid rgb(126, 126, 126) 1px;
     z-index: 1;
     padding-top: 10px;
+}
+
+.opacity {
+    opacity: 0.5;
 }
 
 #home {
