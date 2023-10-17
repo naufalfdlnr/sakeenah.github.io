@@ -101,6 +101,7 @@ p {
     flex-direction: row;
     justify-content: space-between;
     margin-top: 10px;
+    font-size: large;
 }
 
 .name-product button{
@@ -111,7 +112,7 @@ p {
 .reviews {
     display: flex;
     flex-direction: row;
-    font-size: x-small;
+    font-size: small;
     margin-top: 5px;
     margin-bottom: 5px;
 }
@@ -128,7 +129,7 @@ p {
 .reviews button {
     display: flex;
     padding: 3px;
-    font-size: x-small;
+    font-size: small;
     text-align: center;
     align-items: center;
 }
@@ -193,7 +194,7 @@ select {
     border-radius: 10px;
     width: 100%;
     height: 40px;
-
+    background-color: white;
 }
 
 .size {
