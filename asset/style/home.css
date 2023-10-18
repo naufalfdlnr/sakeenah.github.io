@@ -306,6 +306,7 @@ input {
     background-color: white;
     height: fit-content;
     overflow: hidden;
+    padding-top: 5%;
 }
 
 .main-nav::-webkit-scrollbar {
