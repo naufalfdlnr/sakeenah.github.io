@@ -269,8 +269,9 @@ input {
 }
 
 .sidenav::-webkit-scrollbar {
+    display: none;
     background: none;
-  }
+}
 
 .sidenav a {
     padding: 8px 8px 8px 10px;
