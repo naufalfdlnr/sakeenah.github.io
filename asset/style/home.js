@@ -203,11 +203,13 @@ document.getElementById("defaultOpen12").click();
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
   document.getElementById("logout").style.width = "250px";
+  document.getElementById("background").style.width = "100%";
 }
 
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
   document.getElementById("logout").style.width = "0";
+  document.getElementById("background").style.width = "0";
 }
 
 var man = document.getElementsByClassName("man-btn");

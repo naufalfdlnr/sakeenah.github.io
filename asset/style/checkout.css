@@ -142,7 +142,7 @@
     margin-left: 95px;
     background-color: rgb(230, 230, 230);
     border-radius: 5px;
-    padding-left: 4px;
+    padding-left: 2px;
 }
 .quantity {
     margin-left: 50px;
@@ -157,5 +157,11 @@
     margin-bottom: 5px;
 }
 .quantity span {
-    font-size: 12px;
+    font-size: 15px;
+}
+.subtract {
+    font-size: 15px;
+}
+.add { 
+    font-size: 15px;
 }

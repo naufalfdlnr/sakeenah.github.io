@@ -108,6 +108,7 @@ input {
 
 .popular-category::-webkit-scrollbar {
     background: none;
+    display: none;
 }
 
 .popular-category button {
@@ -171,6 +172,7 @@ input {
 
 .title3::-webkit-scrollbar {
     background: none;
+    display: none;
 }
  
 
@@ -192,6 +194,7 @@ input {
 
 .slides::-webkit-scrollbar {
   background: none;
+  display: none;
 }
 
 .slides > div {
@@ -253,6 +256,31 @@ input {
 }
 
 /* SIDE NAV */
+
+.background {
+    opacity: 0.5;
+    background-color: grey;
+    z-index: 1;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 3s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0.5;
+	}
+}
 
 .sidenav {
     height: 100%;

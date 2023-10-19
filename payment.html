@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="/asset/style/payment.css">
+    <link rel="stylesheet" href="/asset/style/global.css">
+</head>
+<body>
+    <div class="container">
+        
+        <div class="header">
+            <a href="/cart.html"><button><img src="/asset/image/arrow-282-64.png" width="15px"></button></a>
+            <span>Payment</span>
+        </div>
+        <div class="blank">
+        </div>
+        <div class="main">
+            <div class="method-list">
+                <div class="payment-method">
+                    <label class="payment-razor">
+                        <img src="/asset/image/razorpay.png" width="70px">
+                        <span class="payment-text"><strong>RazorPay</strong></span>
+                    <input type="radio" name="payment-method">
+                    </label>
+                </div>
+            </div>
+            <div class="method-list">
+                <div class="payment-method">
+                    <label class="payment-payU">
+                        <img src="/asset/image/PayU_logo_PNG2.png" width="60px">
+                        <span class="payment-text"><strong>PayU</strong></span>
+                    <input type="radio" name="payment-method">
+                    </label>
+                </div>
+            </div>
+            <div class="method-list">
+                <div class="payment-method">
+                    <label class="payment-instamojo">
+                        <img src="/asset/image/instamojo.png" width="40px">
+                        <span class="payment-text"><strong>Instamojo</strong></span>
+                    <input type="radio" name="payment-method">
+                    </label>
+                </div>
+            </div>
+            <div class="method-list">
+                <div class="payment-method">
+                    <label class="payment-paypal">
+                        <img src="/asset/image/PayPal.png" width="55px">
+                        <span class="payment-text"><strong>PayPal</strong></span>
+                    <input type="radio" name="payment-method">
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="footer2">
+            <a href="#popup"><button class="checkout">
+                <span>Continue</span>
+            </button></a>
+        </div>
+        <div class="popup" id="popup">
+            <div class="popup-content">
+                <div class="popup-image">
+                    <img src="/asset/image/shopping-cart.png" width="70px">
+                </div>
+                <div class="popup-header">
+                    <h1>Order Successful!</h1>
+                    <h2>You have Succesfully made order</h2>
+                </div>
+                <a href="/order.html"><div><button class="popup-button1">
+                        <span>View Order</span>
+                </button></div></a>
+                <div><button class="popup-button2">
+                        <span>View E-Recipt</span>
+                </button></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
