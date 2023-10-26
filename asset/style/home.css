@@ -259,7 +259,7 @@ input {
 
 .background {
     opacity: 0.5;
-    background-color: grey;
+    background-color: black;
     z-index: 1;
     height: 100%;
     position: fixed;
